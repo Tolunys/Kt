@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Card</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .card {
+            transition: transform 0.3s;
+            margin: 10px;
+            height: 100%;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .card:hover {
+            transform: scale(1.03);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+        .card-img-top {
+            height: 250px;
+            object-fit: cover;
+        }
+        .card-body {
+            display: flex;
+            flex-direction: column;
+        }
+        .card-text {
+            flex-grow: 1;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+        .btn-primary {
+            margin-top: auto;
+            width: 100%;
+        }
+        @media (max-width: 768px) {
+            .card-img-top {
+                height: 200px;
+            }
+            .card-text {
+                font-size: 1rem;
+            }
+        }
+        @media (max-width: 576px) {
+            .card {
+                margin: 5px;
+            }
+            .card-img-top {
+                height: 180px;
+            }
+        }
+    </style>
+</head>
+<body class="bg-light">
+    <div class="container py-5">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="./img/1.jpeg" class="card-img-top" alt="Resim">
+                    <div class="card-body">
+                        <h5 class="card-title">Seni Çok seviyorum</h5>
+                        <p class="card-text">Gözlerinin içine baktığımda,<br>
+                        Kalbim hızla çarpar,<br>
+                        Sen benim her şeyimsin,<br>
+                        Seni sonsuza kadar seveceğim.</p>
+                        <a href="#" class="btn btn-primary">Detaylar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="./img/2.jpeg" class="card-img-top" alt="Resim">
+                    <div class="card-body">
+                        <h5 class="card-title">iyi ki benimlesin</h5>
+                        <p class="card-text">Hayatımın en güzel hediyesisin,<br>
+                        Her anımı güzelleştiriyorsun,<br>
+                        Seninle geçen her saniye,<br>
+                        Benim için bir hazine.</p>
+                        <a href="#" class="btn btn-primary">Detaylar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="./img/3.jpeg" class="card-img-top" alt="Resim">
+                    <div class="card-body">
+                        <h5 class="card-title">Hayatımın anlamı</h5>
+                        <p class="card-text">Seninle geçen her gün,<br>
+                        Bir başka güzel, bir başka özel,<br>
+                        Sen benim hayatımın anlamısın,<br>
+                        Sen benim her şeyimsin.</p>
+                        <a href="#" class="btn btn-primary">Detaylar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="./img/4.jpeg" class="card-img-top" alt="Resim">
+                    <div class="card-body">
+                        <h5 class="card-title">Tek gerçeğim</h5>
+                        <p class="card-text">Dünyada tek gerçeğimsin,<br>
+                        Kalbimin tek sahibi,<br>
+                        Seninle her şey mümkün,<br>
+                        Seninle her şey güzel.</p>
+                        <a href="#" class="btn btn-primary">Detaylar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="./img/5.jpeg" class="card-img-top" alt="Resim">
+                    <div class="card-body">
+                        <h5 class="card-title">Bir ömür beraber yaşamak</h5>
+                        <p class="card-text">Bir ömür boyu yanında olmak,<br>
+                        Her gün seni sevmek,<br>
+                        Seninle yaşlanmak,<br>
+                        En büyük hayalim.</p>
+                        <a href="#" class="btn btn-primary">Detaylar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="./img/6.jpeg" class="card-img-top" alt="Resim">
+                    <div class="card-body">
+                        <h5 class="card-title">Dileğiyle</h5>
+                        <p class="card-text">Seninle geçen her an,<br>
+                        Bir başka güzel, bir başka değerli,<br>
+                        Seninle olmak en büyük dileğim,<br>
+                        Seninle olmak en büyük mutluluğum.</p>
+                        <a href="#" class="btn btn-primary">Detaylar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS ve Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html> 
